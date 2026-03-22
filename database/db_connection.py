@@ -1,12 +1,11 @@
 import mysql.connector as mc
 import os
 from dotenv import load_dotenv
-from logs.logger import logger
 
+# Load environment variables
 load_dotenv("config.env")
 
 def get_connection():
-
     try:
         db = mc.connect(
             host=os.getenv("DB_HOST"),
@@ -15,15 +14,13 @@ def get_connection():
             database=os.getenv("DB_NAME")
         )
 
-        logger.info("Database connected successfully")
+        print("Database connected successfully")
         return db
 
     except mc.Error as e:
-        logger.error(f"MySQL connection error: {e}")
-        print("Database connection failed")
+        print(f"MySQL connection error: {e}")
         return None
 
     except Exception as e:
-        logger.error(f"Unexpected error while connecting DB: {e}")
-        print("Unexpected error occurred")
+        print(f"Unexpected error: {e}")
         return None
