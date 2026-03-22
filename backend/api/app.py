@@ -46,13 +46,10 @@ def get_student(reg_no):
 
 # CREATE STUDENT
 @app.route("/students", methods=["POST"])
-@app.route("/students", methods=["POST"])
 def create_student():
-
     data = request.get_json()
 
     try:
-
         add_student(
             data["reg_no"],
             data["roll_no"],
@@ -67,7 +64,6 @@ def create_student():
         })
 
     except ValueError as e:
-
         return jsonify({
             "success": False,
             "message": str(e)
@@ -102,5 +98,7 @@ def delete_student_api(reg_no):
         return jsonify({"error": str(e)}), 500
 
 
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
