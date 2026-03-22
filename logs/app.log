@@ -1,0 +1,349 @@
+2026-03-15 12:47:30,579 - INFO - Database connected successfully
+2026-03-15 12:49:39,438 - INFO - Database connected successfully
+2026-03-15 12:50:00,767 - WARNING - Duplicate student insertion attempt: 24U10599
+2026-03-15 12:50:04,741 - INFO - Viewed all students
+2026-03-15 12:50:16,755 - INFO - Database connected successfully
+2026-03-15 12:50:22,019 - INFO - Student deleted: 24U10599
+2026-03-15 12:50:23,717 - INFO - View students requested but no students found
+2026-03-15 12:55:22,500 - INFO - Database connected successfully
+2026-03-15 12:55:40,862 - INFO - Student added: 24U10599
+2026-03-15 12:55:45,139 - INFO - Viewed all students
+2026-03-15 12:59:18,700 - INFO - Database connected successfully
+2026-03-15 13:00:17,695 - INFO - Viewed all students
+2026-03-15 13:00:41,807 - INFO - Student updated: 24U10599
+2026-03-15 13:00:44,639 - INFO - Viewed all students
+2026-03-15 14:52:42,780 - INFO - Database connected successfully
+2026-03-15 14:52:52,177 - INFO - Viewed all students
+2026-03-15 14:54:19,043 - INFO - Student added: 24U10103
+2026-03-15 14:54:20,504 - INFO - Viewed all students
+2026-03-15 14:54:32,959 - INFO - Program exited by user
+2026-03-15 15:09:15,267 - INFO - Database connected successfully
+2026-03-15 15:19:54,719 - INFO - Database connected successfully
+2026-03-15 15:19:54,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-15 15:19:54,880 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-15 15:19:54,881 - INFO -  * Restarting with stat
+2026-03-15 15:19:55,210 - INFO - Database connected successfully
+2026-03-15 15:19:55,225 - WARNING -  * Debugger is active!
+2026-03-15 15:19:55,228 - INFO -  * Debugger PIN: 337-375-929
+2026-03-15 15:20:51,459 - INFO - 127.0.0.1 - - [15/Mar/2026 15:20:51] "GET / HTTP/1.1" 200 -
+2026-03-15 15:20:51,601 - INFO - 127.0.0.1 - - [15/Mar/2026 15:20:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-15 15:21:07,816 - INFO - 127.0.0.1 - - [15/Mar/2026 15:21:07] "GET / HTTP/1.1" 200 -
+2026-03-15 15:21:26,759 - INFO - 127.0.0.1 - - [15/Mar/2026 15:21:26] "GET /students HTTP/1.1" 200 -
+2026-03-15 15:26:32,329 - INFO - Database connected successfully
+2026-03-15 15:26:32,349 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-15 15:26:32,349 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-15 15:26:32,350 - INFO -  * Restarting with stat
+2026-03-15 15:26:32,680 - INFO - Database connected successfully
+2026-03-15 15:26:32,696 - WARNING -  * Debugger is active!
+2026-03-15 15:26:32,699 - INFO -  * Debugger PIN: 337-375-929
+2026-03-15 15:27:55,412 - INFO - 127.0.0.1 - - [15/Mar/2026 15:27:55] "GET / HTTP/1.1" 200 -
+2026-03-15 15:28:16,758 - INFO - 127.0.0.1 - - [15/Mar/2026 15:28:16] "GET /students HTTP/1.1" 200 -
+2026-03-15 15:29:49,791 - INFO - 127.0.0.1 - - [15/Mar/2026 15:29:49] "[31m[1mPOST /students HTTP/1.1[0m" 415 -
+2026-03-15 15:30:55,132 - INFO - Student added: 24U10610
+2026-03-15 15:30:55,132 - INFO - 127.0.0.1 - - [15/Mar/2026 15:30:55] "POST /students HTTP/1.1" 200 -
+2026-03-15 15:32:17,991 - INFO - 127.0.0.1 - - [15/Mar/2026 15:32:17] "GET /students HTTP/1.1" 200 -
+2026-03-15 15:32:40,833 - INFO - Student searched: 24U10610
+2026-03-15 15:32:40,833 - INFO - 127.0.0.1 - - [15/Mar/2026 15:32:40] "GET /students/24U10610 HTTP/1.1" 200 -
+2026-03-15 15:33:14,985 - INFO - Student updated: 24U10610
+2026-03-15 15:33:14,986 - INFO - 127.0.0.1 - - [15/Mar/2026 15:33:14] "PUT /students/24U10610 HTTP/1.1" 200 -
+2026-03-15 15:33:36,998 - INFO - Student deleted: 24U10610
+2026-03-15 15:33:36,998 - INFO - 127.0.0.1 - - [15/Mar/2026 15:33:36] "DELETE /students/24U10610 HTTP/1.1" 200 -
+2026-03-15 15:47:35,740 - INFO - Database connected successfully
+2026-03-15 15:47:35,770 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-15 15:47:35,770 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-15 15:47:35,773 - INFO -  * Restarting with stat
+2026-03-15 15:47:36,110 - INFO - Database connected successfully
+2026-03-15 15:47:36,126 - WARNING -  * Debugger is active!
+2026-03-15 15:47:36,130 - INFO -  * Debugger PIN: 337-375-929
+2026-03-15 15:52:10,533 - INFO - Database connected successfully
+2026-03-15 15:52:10,566 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-15 15:52:10,566 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-15 15:52:10,568 - INFO -  * Restarting with stat
+2026-03-15 15:52:10,889 - INFO - Database connected successfully
+2026-03-15 15:52:10,905 - WARNING -  * Debugger is active!
+2026-03-15 15:52:10,909 - INFO -  * Debugger PIN: 337-375-929
+2026-03-15 15:58:11,391 - INFO - 127.0.0.1 - - [15/Mar/2026 15:58:11] "GET /students HTTP/1.1" 200 -
+2026-03-15 15:58:11,398 - INFO - 127.0.0.1 - - [15/Mar/2026 15:58:11] "GET /students HTTP/1.1" 200 -
+2026-03-15 15:58:32,103 - INFO - 127.0.0.1 - - [15/Mar/2026 15:58:32] "GET /students HTTP/1.1" 200 -
+2026-03-15 15:58:32,106 - INFO - 127.0.0.1 - - [15/Mar/2026 15:58:32] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:00:24,808 - INFO - 127.0.0.1 - - [15/Mar/2026 16:00:24] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:00:31,130 - INFO - 127.0.0.1 - - [15/Mar/2026 16:00:31] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:00:31,138 - INFO - 127.0.0.1 - - [15/Mar/2026 16:00:31] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:02:35,550 - INFO - 127.0.0.1 - - [15/Mar/2026 16:02:35] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-15 16:02:35,564 - INFO - 127.0.0.1 - - [15/Mar/2026 16:02:35] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-15 16:02:38,565 - INFO - 127.0.0.1 - - [15/Mar/2026 16:02:38] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:02:38,572 - INFO - 127.0.0.1 - - [15/Mar/2026 16:02:38] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:02:49,897 - INFO - 127.0.0.1 - - [15/Mar/2026 16:02:49] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-15 16:02:49,906 - INFO - 127.0.0.1 - - [15/Mar/2026 16:02:49] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-15 16:05:38,662 - INFO - Database connected successfully
+2026-03-15 16:05:38,685 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-15 16:05:38,686 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-15 16:05:38,687 - INFO -  * Restarting with stat
+2026-03-15 16:05:39,012 - INFO - Database connected successfully
+2026-03-15 16:05:39,028 - WARNING -  * Debugger is active!
+2026-03-15 16:05:39,032 - INFO -  * Debugger PIN: 337-375-929
+2026-03-15 16:06:13,717 - INFO - 127.0.0.1 - - [15/Mar/2026 16:06:13] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:06:13,727 - INFO - 127.0.0.1 - - [15/Mar/2026 16:06:13] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:06:27,708 - INFO - 127.0.0.1 - - [15/Mar/2026 16:06:27] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-15 16:06:27,718 - INFO - 127.0.0.1 - - [15/Mar/2026 16:06:27] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-15 16:07:24,616 - INFO - 127.0.0.1 - - [15/Mar/2026 16:07:24] "GET /students HTTP/1.1" 200 -
+2026-03-15 16:08:10,898 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-15 16:08:10,949 - INFO -  * Restarting with stat
+2026-03-15 16:08:11,443 - INFO - Database connected successfully
+2026-03-15 16:08:11,466 - WARNING -  * Debugger is active!
+2026-03-15 16:08:11,470 - INFO -  * Debugger PIN: 337-375-929
+2026-03-15 16:08:24,363 - INFO - 127.0.0.1 - - [15/Mar/2026 16:08:24] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-15 16:08:24,376 - INFO - 127.0.0.1 - - [15/Mar/2026 16:08:24] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 11:45:41,447 - INFO - 127.0.0.1 - - [16/Mar/2026 11:45:41] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:45:41,459 - INFO - 127.0.0.1 - - [16/Mar/2026 11:45:41] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:45:53,532 - INFO - 127.0.0.1 - - [16/Mar/2026 11:45:53] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 11:45:53,553 - INFO - 127.0.0.1 - - [16/Mar/2026 11:45:53] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 11:49:27,536 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 11:49:27,762 - INFO -  * Restarting with stat
+2026-03-16 11:49:28,912 - INFO - Database connected successfully
+2026-03-16 11:49:28,962 - WARNING -  * Debugger is active!
+2026-03-16 11:49:28,976 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 11:49:30,072 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 11:49:30,159 - INFO -  * Restarting with stat
+2026-03-16 11:49:31,053 - INFO - Database connected successfully
+2026-03-16 11:49:31,089 - WARNING -  * Debugger is active!
+2026-03-16 11:49:31,097 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 11:49:32,139 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 11:49:32,236 - INFO -  * Restarting with stat
+2026-03-16 11:49:33,378 - INFO - Database connected successfully
+2026-03-16 11:49:33,429 - WARNING -  * Debugger is active!
+2026-03-16 11:49:33,440 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 11:49:36,317 - INFO - 127.0.0.1 - - [16/Mar/2026 11:49:36] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:49:36,323 - INFO - 127.0.0.1 - - [16/Mar/2026 11:49:36] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:49:45,448 - INFO - 127.0.0.1 - - [16/Mar/2026 11:49:45] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 11:49:45,562 - INFO - 127.0.0.1 - - [16/Mar/2026 11:49:45] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 11:50:41,498 - INFO - Database connected successfully
+2026-03-16 11:50:41,544 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.149.50:5000
+2026-03-16 11:50:41,545 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-16 11:50:41,549 - INFO -  * Restarting with stat
+2026-03-16 11:50:42,352 - INFO - Database connected successfully
+2026-03-16 11:50:42,385 - WARNING -  * Debugger is active!
+2026-03-16 11:50:42,393 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 11:53:10,233 - INFO - 127.0.0.1 - - [16/Mar/2026 11:53:10] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:53:10,248 - INFO - 127.0.0.1 - - [16/Mar/2026 11:53:10] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:53:23,661 - INFO - 127.0.0.1 - - [16/Mar/2026 11:53:23] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 11:53:23,678 - INFO - 127.0.0.1 - - [16/Mar/2026 11:53:23] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 11:56:17,974 - INFO - 127.0.0.1 - - [16/Mar/2026 11:56:17] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:56:17,979 - INFO - 127.0.0.1 - - [16/Mar/2026 11:56:17] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:56:26,257 - INFO - 127.0.0.1 - - [16/Mar/2026 11:56:26] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 11:56:26,272 - INFO - 127.0.0.1 - - [16/Mar/2026 11:56:26] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 11:56:29,980 - INFO - 127.0.0.1 - - [16/Mar/2026 11:56:29] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 11:57:08,476 - INFO - Database connected successfully
+2026-03-16 11:57:08,518 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.149.50:5000
+2026-03-16 11:57:08,518 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-16 11:57:08,520 - INFO -  * Restarting with stat
+2026-03-16 11:57:09,082 - INFO - Database connected successfully
+2026-03-16 11:57:09,104 - WARNING -  * Debugger is active!
+2026-03-16 11:57:09,110 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 11:58:06,556 - INFO - 127.0.0.1 - - [16/Mar/2026 11:58:06] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:58:06,560 - INFO - 127.0.0.1 - - [16/Mar/2026 11:58:06] "GET /students HTTP/1.1" 200 -
+2026-03-16 11:58:15,132 - INFO - 127.0.0.1 - - [16/Mar/2026 11:58:15] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 11:58:15,147 - INFO - 127.0.0.1 - - [16/Mar/2026 11:58:15] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 12:00:21,004 - INFO - 127.0.0.1 - - [16/Mar/2026 12:00:21] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:00:21,012 - INFO - 127.0.0.1 - - [16/Mar/2026 12:00:21] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:00:30,014 - INFO - 127.0.0.1 - - [16/Mar/2026 12:00:30] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:00:30,271 - INFO - 127.0.0.1 - - [16/Mar/2026 12:00:30] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 12:00:42,598 - INFO - 127.0.0.1 - - [16/Mar/2026 12:00:42] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:00:42,912 - INFO - 127.0.0.1 - - [16/Mar/2026 12:00:42] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 12:09:45,284 - INFO - 127.0.0.1 - - [16/Mar/2026 12:09:45] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:11:20,373 - INFO - 127.0.0.1 - - [16/Mar/2026 12:11:20] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:11:20,379 - INFO - 127.0.0.1 - - [16/Mar/2026 12:11:20] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:11:30,624 - INFO - 127.0.0.1 - - [16/Mar/2026 12:11:30] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:11:30,634 - INFO - 127.0.0.1 - - [16/Mar/2026 12:11:30] "[35m[1mPOST /students HTTP/1.1[0m" 500 -
+2026-03-16 12:13:57,185 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 12:13:57,387 - INFO -  * Restarting with stat
+2026-03-16 12:13:58,041 - INFO - Database connected successfully
+2026-03-16 12:13:58,066 - WARNING -  * Debugger is active!
+2026-03-16 12:13:58,073 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 12:14:02,114 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 12:14:02,191 - INFO -  * Restarting with stat
+2026-03-16 12:14:02,840 - INFO - Database connected successfully
+2026-03-16 12:14:02,862 - WARNING -  * Debugger is active!
+2026-03-16 12:14:02,867 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 12:14:17,939 - INFO - Database connected successfully
+2026-03-16 12:14:17,964 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.16.3:5000
+2026-03-16 12:14:17,964 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-16 12:14:17,965 - INFO -  * Restarting with stat
+2026-03-16 12:14:18,302 - INFO - Database connected successfully
+2026-03-16 12:14:18,317 - WARNING -  * Debugger is active!
+2026-03-16 12:14:18,322 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 12:15:55,609 - INFO - 127.0.0.1 - - [16/Mar/2026 12:15:55] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:15:55,615 - INFO - 127.0.0.1 - - [16/Mar/2026 12:15:55] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:16:03,853 - INFO - 127.0.0.1 - - [16/Mar/2026 12:16:03] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:16:03,877 - INFO - Student added: 24U10588
+2026-03-16 12:16:03,877 - INFO - 127.0.0.1 - - [16/Mar/2026 12:16:03] "POST /students HTTP/1.1" 200 -
+2026-03-16 12:16:03,882 - INFO - 127.0.0.1 - - [16/Mar/2026 12:16:03] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:24:00,626 - INFO - 127.0.0.1 - - [16/Mar/2026 12:24:00] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:24:00,634 - INFO - 127.0.0.1 - - [16/Mar/2026 12:24:00] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:25:07,221 - INFO - 127.0.0.1 - - [16/Mar/2026 12:25:07] "OPTIONS /students/24U10103 HTTP/1.1" 200 -
+2026-03-16 12:25:07,245 - INFO - Student updated: 24U10103
+2026-03-16 12:25:07,245 - INFO - 127.0.0.1 - - [16/Mar/2026 12:25:07] "PUT /students/24U10103 HTTP/1.1" 200 -
+2026-03-16 12:25:07,252 - INFO - 127.0.0.1 - - [16/Mar/2026 12:25:07] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:25:15,481 - INFO - 127.0.0.1 - - [16/Mar/2026 12:25:15] "OPTIONS /students/24U10599 HTTP/1.1" 200 -
+2026-03-16 12:25:15,489 - INFO - Student updated: 24U10599
+2026-03-16 12:25:15,489 - INFO - 127.0.0.1 - - [16/Mar/2026 12:25:15] "PUT /students/24U10599 HTTP/1.1" 200 -
+2026-03-16 12:25:15,496 - INFO - 127.0.0.1 - - [16/Mar/2026 12:25:15] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:28:10,002 - INFO - 127.0.0.1 - - [16/Mar/2026 12:28:10] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:32:06,619 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 12:32:06,741 - INFO -  * Restarting with stat
+2026-03-16 12:32:07,531 - INFO - Database connected successfully
+2026-03-16 12:32:07,580 - WARNING -  * Debugger is active!
+2026-03-16 12:32:07,587 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 12:32:47,487 - INFO - 127.0.0.1 - - [16/Mar/2026 12:32:47] "[33mGET /students/search/24U10103 HTTP/1.1[0m" 404 -
+2026-03-16 12:32:49,493 - INFO - 127.0.0.1 - - [16/Mar/2026 12:32:49] "[33mGET /students/search/24U10103 HTTP/1.1[0m" 404 -
+2026-03-16 12:32:57,344 - INFO - 127.0.0.1 - - [16/Mar/2026 12:32:57] "[33mGET /students/search/24U10599 HTTP/1.1[0m" 404 -
+2026-03-16 12:32:58,309 - INFO - 127.0.0.1 - - [16/Mar/2026 12:32:58] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:32:59,311 - INFO - 127.0.0.1 - - [16/Mar/2026 12:32:59] "[33mGET /students/search/24U10599 HTTP/1.1[0m" 404 -
+2026-03-16 12:32:59,684 - INFO - 127.0.0.1 - - [16/Mar/2026 12:32:59] "[33mGET /students/search/24U10599 HTTP/1.1[0m" 404 -
+2026-03-16 12:38:48,330 - INFO - Student searched: 24U10599
+2026-03-16 12:38:48,331 - INFO - 127.0.0.1 - - [16/Mar/2026 12:38:48] "GET /students/24U10599 HTTP/1.1" 200 -
+2026-03-16 12:40:10,241 - INFO - 127.0.0.1 - - [16/Mar/2026 12:40:10] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:41:15,997 - INFO - 127.0.0.1 - - [16/Mar/2026 12:41:15] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:41:16,014 - WARNING - Duplicate student insertion attempt: 24U10588
+2026-03-16 12:41:16,014 - INFO - 127.0.0.1 - - [16/Mar/2026 12:41:16] "POST /students HTTP/1.1" 200 -
+2026-03-16 12:41:18,317 - INFO - 127.0.0.1 - - [16/Mar/2026 12:41:18] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:41:32,377 - INFO - 127.0.0.1 - - [16/Mar/2026 12:41:32] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:42:39,372 - WARNING - Search attempted but student not found: 24U10545
+2026-03-16 12:42:39,373 - INFO - 127.0.0.1 - - [16/Mar/2026 12:42:39] "GET /students/24U10545 HTTP/1.1" 200 -
+2026-03-16 12:43:06,921 - INFO - 127.0.0.1 - - [16/Mar/2026 12:43:06] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:43:06,927 - WARNING - Duplicate student insertion attempt: 24U10599
+2026-03-16 12:43:06,927 - INFO - 127.0.0.1 - - [16/Mar/2026 12:43:06] "POST /students HTTP/1.1" 200 -
+2026-03-16 12:43:08,338 - INFO - 127.0.0.1 - - [16/Mar/2026 12:43:08] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:45:08,236 - INFO - 127.0.0.1 - - [16/Mar/2026 12:45:08] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:45:08,241 - WARNING - Duplicate student insertion attempt: 24U10599
+2026-03-16 12:45:08,241 - INFO - 127.0.0.1 - - [16/Mar/2026 12:45:08] "POST /students HTTP/1.1" 200 -
+2026-03-16 12:45:09,913 - INFO - 127.0.0.1 - - [16/Mar/2026 12:45:09] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:45:15,769 - INFO - 127.0.0.1 - - [16/Mar/2026 12:45:15] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:47:02,263 - INFO -  * Detected change in 'D:\\Student_Database\\backend\\api\\app.py', reloading
+2026-03-16 12:47:02,412 - INFO -  * Restarting with stat
+2026-03-16 12:47:03,117 - INFO - Database connected successfully
+2026-03-16 12:47:03,136 - WARNING -  * Debugger is active!
+2026-03-16 12:47:03,140 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 12:47:19,855 - INFO - 127.0.0.1 - - [16/Mar/2026 12:47:19] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:47:19,861 - WARNING - Duplicate student insertion attempt: 24U10599
+2026-03-16 12:47:19,862 - INFO - 127.0.0.1 - - [16/Mar/2026 12:47:19] "POST /students HTTP/1.1" 200 -
+2026-03-16 12:47:21,723 - INFO - 127.0.0.1 - - [16/Mar/2026 12:47:21] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:53:04,159 - INFO - 127.0.0.1 - - [16/Mar/2026 12:53:04] "GET /students HTTP/1.1" 200 -
+2026-03-16 12:53:15,733 - INFO - 127.0.0.1 - - [16/Mar/2026 12:53:15] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 12:53:15,737 - WARNING - Duplicate student insertion attempt: 24U10599
+2026-03-16 12:53:15,738 - INFO - 127.0.0.1 - - [16/Mar/2026 12:53:15] "POST /students HTTP/1.1" 200 -
+2026-03-16 12:53:17,240 - INFO - 127.0.0.1 - - [16/Mar/2026 12:53:17] "GET /students HTTP/1.1" 200 -
+2026-03-16 13:04:44,406 - INFO - 127.0.0.1 - - [16/Mar/2026 13:04:44] "GET /students HTTP/1.1" 200 -
+2026-03-16 13:05:01,348 - INFO - 127.0.0.1 - - [16/Mar/2026 13:05:01] "GET /students HTTP/1.1" 200 -
+2026-03-16 13:05:01,358 - INFO - 127.0.0.1 - - [16/Mar/2026 13:05:01] "GET /students HTTP/1.1" 200 -
+2026-03-16 13:05:51,928 - INFO - 127.0.0.1 - - [16/Mar/2026 13:05:51] "OPTIONS /students/24U10588 HTTP/1.1" 200 -
+2026-03-16 13:05:51,984 - INFO - Student deleted: 24U10588
+2026-03-16 13:05:51,984 - INFO - 127.0.0.1 - - [16/Mar/2026 13:05:51] "DELETE /students/24U10588 HTTP/1.1" 200 -
+2026-03-16 13:05:51,991 - INFO - 127.0.0.1 - - [16/Mar/2026 13:05:51] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:25:40,679 - INFO - Database connected successfully
+2026-03-16 17:25:40,773 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.149.50:5000
+2026-03-16 17:25:40,773 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-16 17:25:40,776 - INFO -  * Restarting with stat
+2026-03-16 17:25:41,348 - INFO - Database connected successfully
+2026-03-16 17:25:41,376 - WARNING -  * Debugger is active!
+2026-03-16 17:25:41,382 - INFO -  * Debugger PIN: 337-375-929
+2026-03-16 17:26:11,323 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:11] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:26:11,331 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:11] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:26:19,854 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:19] "OPTIONS /students/24U10103 HTTP/1.1" 200 -
+2026-03-16 17:26:19,902 - INFO - Student deleted: 24U10103
+2026-03-16 17:26:19,902 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:19] "DELETE /students/24U10103 HTTP/1.1" 200 -
+2026-03-16 17:26:19,910 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:19] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:26:20,363 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:20] "OPTIONS /students/24U10599 HTTP/1.1" 200 -
+2026-03-16 17:26:20,375 - INFO - Student deleted: 24U10599
+2026-03-16 17:26:20,375 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:20] "DELETE /students/24U10599 HTTP/1.1" 200 -
+2026-03-16 17:26:20,383 - INFO - 127.0.0.1 - - [16/Mar/2026 17:26:20] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:28:41,264 - INFO - 127.0.0.1 - - [16/Mar/2026 17:28:41] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:28:47,370 - INFO - 127.0.0.1 - - [16/Mar/2026 17:28:47] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:28:47,376 - INFO - 127.0.0.1 - - [16/Mar/2026 17:28:47] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:29:51,595 - INFO - 127.0.0.1 - - [16/Mar/2026 17:29:51] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:29:51,604 - INFO - 127.0.0.1 - - [16/Mar/2026 17:29:51] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:30:05,056 - INFO - 127.0.0.1 - - [16/Mar/2026 17:30:05] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 17:30:05,080 - INFO - Student added: 24U10599
+2026-03-16 17:30:05,080 - INFO - 127.0.0.1 - - [16/Mar/2026 17:30:05] "POST /students HTTP/1.1" 200 -
+2026-03-16 17:30:05,089 - INFO - 127.0.0.1 - - [16/Mar/2026 17:30:05] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:30:33,656 - INFO - 127.0.0.1 - - [16/Mar/2026 17:30:33] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 17:30:33,669 - INFO - Student added: 24U10103
+2026-03-16 17:30:33,670 - INFO - 127.0.0.1 - - [16/Mar/2026 17:30:33] "POST /students HTTP/1.1" 200 -
+2026-03-16 17:30:33,680 - INFO - 127.0.0.1 - - [16/Mar/2026 17:30:33] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:31:04,549 - INFO - 127.0.0.1 - - [16/Mar/2026 17:31:04] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 17:31:04,560 - INFO - Student added: 24U10548
+2026-03-16 17:31:04,560 - INFO - 127.0.0.1 - - [16/Mar/2026 17:31:04] "POST /students HTTP/1.1" 200 -
+2026-03-16 17:31:04,568 - INFO - 127.0.0.1 - - [16/Mar/2026 17:31:04] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:33:27,707 - INFO - 127.0.0.1 - - [16/Mar/2026 17:33:27] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:33:27,714 - INFO - 127.0.0.1 - - [16/Mar/2026 17:33:27] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:33:44,488 - INFO - 127.0.0.1 - - [16/Mar/2026 17:33:44] "OPTIONS /students/24U10103 HTTP/1.1" 200 -
+2026-03-16 17:33:44,505 - INFO - Student updated: 24U10103
+2026-03-16 17:33:44,506 - INFO - 127.0.0.1 - - [16/Mar/2026 17:33:44] "PUT /students/24U10103 HTTP/1.1" 200 -
+2026-03-16 17:33:44,534 - INFO - 127.0.0.1 - - [16/Mar/2026 17:33:44] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:35:45,188 - INFO - 127.0.0.1 - - [16/Mar/2026 17:35:45] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:35:46,020 - INFO - 127.0.0.1 - - [16/Mar/2026 17:35:46] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:48:48,645 - INFO - 127.0.0.1 - - [16/Mar/2026 17:48:48] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:48:50,732 - INFO - 127.0.0.1 - - [16/Mar/2026 17:48:50] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:50:41,378 - INFO - 127.0.0.1 - - [16/Mar/2026 17:50:41] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-16 17:50:41,392 - WARNING - Duplicate student insertion attempt: 24U10103
+2026-03-16 17:50:41,393 - INFO - 127.0.0.1 - - [16/Mar/2026 17:50:41] "POST /students HTTP/1.1" 200 -
+2026-03-16 17:50:47,058 - INFO - 127.0.0.1 - - [16/Mar/2026 17:50:47] "GET /students HTTP/1.1" 200 -
+2026-03-16 17:51:02,771 - INFO - 127.0.0.1 - - [16/Mar/2026 17:51:02] "OPTIONS /students/24U10548 HTTP/1.1" 200 -
+2026-03-16 17:51:02,794 - INFO - Student updated: 24U10548
+2026-03-16 17:51:02,795 - INFO - 127.0.0.1 - - [16/Mar/2026 17:51:02] "PUT /students/24U10548 HTTP/1.1" 200 -
+2026-03-16 17:51:11,115 - INFO - 127.0.0.1 - - [16/Mar/2026 17:51:11] "GET /students HTTP/1.1" 200 -
+2026-03-20 09:12:30,983 - INFO - Database connected successfully
+2026-03-20 09:12:31,073 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+2026-03-20 09:12:31,074 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 09:12:31,077 - INFO -  * Restarting with stat
+2026-03-20 09:12:31,808 - INFO - Database connected successfully
+2026-03-20 09:12:31,839 - WARNING -  * Debugger is active!
+2026-03-20 09:12:31,846 - INFO -  * Debugger PIN: 337-375-929
+2026-03-20 09:13:08,084 - INFO - 127.0.0.1 - - [20/Mar/2026 09:13:08] "GET /students HTTP/1.1" 200 -
+2026-03-20 09:17:33,457 - INFO - 127.0.0.1 - - [20/Mar/2026 09:17:33] "OPTIONS /students HTTP/1.1" 200 -
+2026-03-20 09:17:33,484 - INFO - Student added: 24U10735
+2026-03-20 09:17:33,485 - INFO - 127.0.0.1 - - [20/Mar/2026 09:17:33] "POST /students HTTP/1.1" 200 -
+2026-03-20 09:17:36,850 - INFO - 127.0.0.1 - - [20/Mar/2026 09:17:36] "GET /students HTTP/1.1" 200 -
+2026-03-20 11:38:05,239 - INFO - Database connected successfully
+2026-03-20 11:38:05,480 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.16.3:5000
+2026-03-20 11:38:05,480 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 11:38:05,494 - INFO -  * Restarting with stat
+2026-03-20 11:38:06,459 - INFO - Database connected successfully
+2026-03-20 11:38:06,497 - WARNING -  * Debugger is active!
+2026-03-20 11:38:06,507 - INFO -  * Debugger PIN: 337-375-929
+2026-03-20 11:40:38,987 - INFO - 127.0.0.1 - - [20/Mar/2026 11:40:38] "GET /students HTTP/1.1" 200 -
+2026-03-20 11:40:59,388 - INFO - 127.0.0.1 - - [20/Mar/2026 11:40:59] "OPTIONS /students/24U10735 HTTP/1.1" 200 -
+2026-03-20 11:40:59,446 - INFO - Student updated: 24U10735
+2026-03-20 11:40:59,447 - INFO - 127.0.0.1 - - [20/Mar/2026 11:40:59] "PUT /students/24U10735 HTTP/1.1" 200 -
+2026-03-20 11:41:02,351 - INFO - 127.0.0.1 - - [20/Mar/2026 11:41:02] "GET /students HTTP/1.1" 200 -
+2026-03-20 11:41:09,396 - INFO - 127.0.0.1 - - [20/Mar/2026 11:41:09] "OPTIONS /students/24U10548 HTTP/1.1" 200 -
+2026-03-20 11:41:09,412 - INFO - Student deleted: 24U10548
+2026-03-20 11:41:09,413 - INFO - 127.0.0.1 - - [20/Mar/2026 11:41:09] "DELETE /students/24U10548 HTTP/1.1" 200 -
+2026-03-20 11:41:12,484 - INFO - 127.0.0.1 - - [20/Mar/2026 11:41:12] "GET /students HTTP/1.1" 200 -
+2026-03-20 11:51:20,730 - INFO - 127.0.0.1 - - [20/Mar/2026 11:51:20] "OPTIONS /students/24U10103 HTTP/1.1" 200 -
+2026-03-20 11:51:20,849 - INFO - Student updated: 24U10103
+2026-03-20 11:51:20,850 - INFO - 127.0.0.1 - - [20/Mar/2026 11:51:20] "PUT /students/24U10103 HTTP/1.1" 200 -
+2026-03-20 11:51:25,794 - INFO - 127.0.0.1 - - [20/Mar/2026 11:51:25] "GET /students HTTP/1.1" 200 -

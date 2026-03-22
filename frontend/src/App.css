@@ -1,0 +1,89 @@
+body{
+background: linear-gradient(135deg,#667eea,#764ba2);
+font-family: Arial;
+margin:0;
+color:white;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:rgba(0,0,0,0.2);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* Dashboard */
+
+h1{
+text-align:center;
+margin-top:30px;
+}
+
+.add-student{
+display:flex;
+justify-content:center;
+gap:10px;
+margin:30px;
+}
+
+input{
+padding:10px;
+border-radius:6px;
+border:none;
+}
+
+button{
+padding:10px 18px;
+border:none;
+border-radius:6px;
+background:#00c9a7;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#00a78b;
+}
+
+/* Table */
+
+table{
+margin:30px auto;
+border-collapse:collapse;
+background:white;
+color:black;
+}
+
+th{
+background:#667eea;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+text-align:center;
+}
+
+/* About page */
+
+.about{
+width:60%;
+margin:auto;
+margin-top:50px;
+text-align:center;
+}
