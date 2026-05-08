@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   getStudents,
@@ -8,6 +8,8 @@ import {
 } from "../services/api";
 
 import StudentTable from "../components/StudentTable";
+
+import "./Dashboard.css";
 
 
 function Dashboard() {
@@ -21,6 +23,12 @@ function Dashboard() {
     age: "",
     branch: ""
   });
+
+
+  // LOAD STUDENTS ON PAGE LOAD
+  useEffect(() => {
+    loadStudents();
+  }, []);
 
 
   // HANDLE INPUT CHANGE
@@ -54,6 +62,17 @@ function Dashboard() {
   // ADD STUDENT
   const handleAddStudent = async () => {
 
+    if (
+      !form.reg_no ||
+      !form.roll_no ||
+      !form.name ||
+      !form.age ||
+      !form.branch
+    ) {
+      alert("Please fill all fields");
+      return;
+    }
+
     try {
 
       const result = await addStudent(form);
@@ -73,7 +92,6 @@ function Dashboard() {
         branch: ""
       });
 
-      // RELOAD TABLE
       loadStudents();
 
     } catch (error) {
@@ -99,7 +117,6 @@ function Dashboard() {
 
       alert("Student Deleted");
 
-      // RELOAD TABLE
       loadStudents();
 
     } catch (error) {
@@ -150,7 +167,6 @@ function Dashboard() {
 
       alert("Student Updated");
 
-      // RELOAD TABLE
       loadStudents();
 
     } catch (error) {
@@ -164,35 +180,39 @@ function Dashboard() {
 
   return (
 
-    <div>
+    <div className="dashboard-container">
 
-      <h1>Student Dashboard</h1>
+      <h1 className="dashboard-title">
+        Student Management System
+      </h1>
 
-      <div className="add-student">
+
+      <div className="form-container">
 
         <input
           name="reg_no"
-          placeholder="Reg No"
+          placeholder="Registration Number"
           value={form.reg_no}
           onChange={handleChange}
         />
 
         <input
           name="roll_no"
-          placeholder="Roll No"
+          placeholder="Roll Number"
           value={form.roll_no}
           onChange={handleChange}
         />
 
         <input
           name="name"
-          placeholder="Name"
+          placeholder="Student Name"
           value={form.name}
           onChange={handleChange}
         />
 
         <input
           name="age"
+          type="number"
           placeholder="Age"
           value={form.age}
           onChange={handleChange}
@@ -205,15 +225,21 @@ function Dashboard() {
           onChange={handleChange}
         />
 
-        <button onClick={handleAddStudent}>
+        <button
+          className="add-btn"
+          onClick={handleAddStudent}
+        >
           Add Student
         </button>
 
       </div>
 
 
-      <button onClick={loadStudents}>
-        Show Students
+      <button
+        className="refresh-btn"
+        onClick={loadStudents}
+      >
+        Refresh Students
       </button>
 
 
