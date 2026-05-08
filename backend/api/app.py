@@ -21,8 +21,15 @@ from services.student_service import (
 
 app = Flask(__name__)
 
-# Enable CORS
-CORS(app)
+# FIXED CORS
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": "*"
+        }
+    }
+)
 
 
 # =========================
