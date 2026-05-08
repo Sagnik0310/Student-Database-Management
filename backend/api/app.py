@@ -20,62 +20,107 @@ from services.student_service import (
 )
 
 app = Flask(__name__)
+
+# Enable CORS
 CORS(app)
 
 
-@app.route("/")
+# =========================
+# HOME ROUTE
+# =========================
+@app.route("/", methods=["GET"])
 def home():
+
     return jsonify({
-        "message": "Student Management API running"
+        "success": True,
+        "message": "Student Management API is running"
     })
 
 
+# =========================
+# HEALTH CHECK
+# =========================
+@app.route("/health", methods=["GET"])
+def health_check():
+
+    return jsonify({
+        "status": "healthy"
+    })
+
+
+# =========================
 # GET ALL STUDENTS
+# =========================
 @app.route("/students", methods=["GET"])
 def get_students():
 
     try:
 
-        data = view_students()
+        students = view_students()
 
-        return jsonify(data)
+        return jsonify(students), 200
 
     except Exception as e:
 
         return jsonify({
+            "success": False,
             "error": str(e)
         }), 500
 
 
-# GET ONE STUDENT
+# =========================
+# GET SINGLE STUDENT
+# =========================
 @app.route("/students/<reg_no>", methods=["GET"])
 def get_student(reg_no):
 
     try:
 
-        data = search_student(reg_no)
+        student = search_student(reg_no)
 
-        if not data:
+        if not student:
+
             return jsonify({
-                "error": "Student not found"
+                "success": False,
+                "message": "Student not found"
             }), 404
 
-        return jsonify(data)
+        return jsonify(student), 200
 
     except Exception as e:
 
         return jsonify({
+            "success": False,
             "error": str(e)
         }), 500
 
 
-# CREATE STUDENT
+# =========================
+# ADD STUDENT
+# =========================
 @app.route("/students", methods=["POST"])
 def create_student():
 
     try:
 
         data = request.get_json()
+
+        required_fields = [
+            "reg_no",
+            "roll_no",
+            "name",
+            "age",
+            "branch"
+        ]
+
+        for field in required_fields:
+
+            if field not in data:
+
+                return jsonify({
+                    "success": False,
+                    "message": f"{field} is required"
+                }), 400
 
         result = add_student(
             data["reg_no"],
@@ -86,18 +131,28 @@ def create_student():
         )
 
         if "error" in result:
-            return jsonify(result), 400
 
-        return jsonify(result), 201
+            return jsonify({
+                "success": False,
+                "message": result["error"]
+            }), 400
+
+        return jsonify({
+            "success": True,
+            "message": "Student added successfully"
+        }), 201
 
     except Exception as e:
 
         return jsonify({
+            "success": False,
             "error": str(e)
         }), 500
 
 
+# =========================
 # UPDATE STUDENT
+# =========================
 @app.route("/students/<reg_no>", methods=["PUT"])
 def update_student_api(reg_no):
 
@@ -113,21 +168,28 @@ def update_student_api(reg_no):
         )
 
         if "error" in result:
-            return jsonify(result), 404
+
+            return jsonify({
+                "success": False,
+                "message": result["error"]
+            }), 404
 
         return jsonify({
             "success": True,
             "message": "Student updated successfully"
-        })
+        }), 200
 
     except Exception as e:
 
         return jsonify({
+            "success": False,
             "error": str(e)
         }), 500
 
 
+# =========================
 # DELETE STUDENT
+# =========================
 @app.route("/students/<reg_no>", methods=["DELETE"])
 def delete_student_api(reg_no):
 
@@ -136,20 +198,28 @@ def delete_student_api(reg_no):
         result = delete_student(reg_no)
 
         if "error" in result:
-            return jsonify(result), 404
+
+            return jsonify({
+                "success": False,
+                "message": result["error"]
+            }), 404
 
         return jsonify({
             "success": True,
             "message": "Student deleted successfully"
-        })
+        }), 200
 
     except Exception as e:
 
         return jsonify({
+            "success": False,
             "error": str(e)
         }), 500
 
 
+# =========================
+# MAIN
+# =========================
 if __name__ == "__main__":
 
     port = int(os.environ.get("PORT", 10000))
