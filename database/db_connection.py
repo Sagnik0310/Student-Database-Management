@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv("config.env")
+load_dotenv(os.path.join(os.path.dirname(__file__), "../config.env"))
 
 def get_connection():
     try:
