@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: student-management-backend
+    env: python
+    buildCommand: pip install -r backend/api/requirements.txt
+    startCommand: gunicorn backend.api.app:app
