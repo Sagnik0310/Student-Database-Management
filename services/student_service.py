@@ -1,4 +1,3 @@
-import mysql.connector as mc
 from database.db_connection import get_connection
 import re
 
@@ -6,14 +5,14 @@ db = get_connection()
 
 if db is None:
     print("Database connection failed. App will still run.")
-    cursor = None
+    students_collection = None
 else:
-    cursor = db.cursor()
+    students_collection = db["students"]
 
 
 def add_student(reg_no, roll_no, name, age, branch):
 
-    if cursor is None:
+    if students_collection is None:
         return {"error": "Database not connected"}
 
     if not reg_no.strip():
@@ -34,38 +33,49 @@ def add_student(reg_no, roll_no, name, age, branch):
     if not re.match(r'^[A-Za-z0-9]+$', reg_no):
         return {"error": "Registration number must be alphanumeric"}
 
-    query = "INSERT INTO students(reg_no, roll_no, name, age, branch) VALUES (%s,%s,%s,%s,%s)"
-    values = (reg_no, roll_no, name, age, branch)
+    existing_student = students_collection.find_one({"reg_no": reg_no})
 
-    try:
-        cursor.execute(query, values)
-        db.commit()
-        return {"success": True, "message": "Student added successfully"}
-
-    except mc.IntegrityError:
+    if existing_student:
         return {"error": "Student already exists"}
 
-    except mc.Error as e:
+    student_data = {
+        "reg_no": reg_no,
+        "roll_no": roll_no,
+        "name": name,
+        "age": age,
+        "branch": branch
+    }
+
+    try:
+        students_collection.insert_one(student_data)
+
+        return {
+            "success": True,
+            "message": "Student added successfully"
+        }
+
+    except Exception as e:
         return {"error": str(e)}
 
 
 def view_students():
 
-    if cursor is None:
+    if students_collection is None:
         return []
 
     try:
-        cursor.execute("SELECT * FROM students")
-        result = cursor.fetchall()
+        result = students_collection.find()
 
         students = []
-        for row in result:
+
+        for student in result:
+
             students.append({
-                "reg_no": row[0],
-                "roll_no": row[1],
-                "name": row[2],
-                "age": row[3],
-                "branch": row[4]
+                "reg_no": student.get("reg_no"),
+                "roll_no": student.get("roll_no"),
+                "name": student.get("name"),
+                "age": student.get("age"),
+                "branch": student.get("branch")
             })
 
         return students
@@ -76,23 +86,21 @@ def view_students():
 
 def search_student(reg_no):
 
-    if cursor is None:
+    if students_collection is None:
         return None
 
     try:
-        query = "SELECT * FROM students WHERE reg_no = %s"
-        cursor.execute(query, (reg_no,))
-        result = cursor.fetchone()
+        student = students_collection.find_one({"reg_no": reg_no})
 
-        if not result:
+        if not student:
             return None
 
         return {
-            "reg_no": result[0],
-            "roll_no": result[1],
-            "name": result[2],
-            "age": result[3],
-            "branch": result[4]
+            "reg_no": student.get("reg_no"),
+            "roll_no": student.get("roll_no"),
+            "name": student.get("name"),
+            "age": student.get("age"),
+            "branch": student.get("branch")
         }
 
     except Exception:
@@ -101,40 +109,48 @@ def search_student(reg_no):
 
 def update_student(reg_no, name, age, branch):
 
-    if cursor is None:
+    if students_collection is None:
         return {"error": "Database not connected"}
 
     try:
-        query = "UPDATE students SET name=%s, age=%s, branch=%s WHERE reg_no=%s"
-        values = (name, age, branch, reg_no)
 
-        cursor.execute(query, values)
-        db.commit()
+        updated_data = {
+            "$set": {
+                "name": name,
+                "age": age,
+                "branch": branch
+            }
+        }
 
-        if cursor.rowcount == 0:
+        result = students_collection.update_one(
+            {"reg_no": reg_no},
+            updated_data
+        )
+
+        if result.matched_count == 0:
             return {"error": "Student not found"}
 
         return {"success": True}
 
-    except mc.Error as e:
+    except Exception as e:
         return {"error": str(e)}
 
 
 def delete_student(reg_no):
 
-    if cursor is None:
+    if students_collection is None:
         return {"error": "Database not connected"}
 
     try:
-        query = "DELETE FROM students WHERE reg_no = %s"
 
-        cursor.execute(query, (reg_no,))
-        db.commit()
+        result = students_collection.delete_one(
+            {"reg_no": reg_no}
+        )
 
-        if cursor.rowcount == 0:
+        if result.deleted_count == 0:
             return {"error": "Student not found"}
 
         return {"success": True}
 
-    except mc.Error as e:
+    except Exception as e:
         return {"error": str(e)}
