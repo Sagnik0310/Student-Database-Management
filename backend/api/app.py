@@ -1,7 +1,9 @@
 import sys
 import os
 
-# Add project root to Python path
+# =========================
+# ADD PROJECT ROOT TO PATH
+# =========================
 sys.path.append(
     os.path.abspath(
         os.path.join(os.path.dirname(__file__), "../../")
@@ -19,9 +21,14 @@ from services.student_service import (
     delete_student
 )
 
+# =========================
+# FLASK APP
+# =========================
 app = Flask(__name__)
 
-# FIXED CORS
+# =========================
+# ENABLE CORS
+# =========================
 CORS(
     app,
     resources={
@@ -51,6 +58,7 @@ def home():
 def health_check():
 
     return jsonify({
+        "success": True,
         "status": "healthy"
     })
 
@@ -68,6 +76,8 @@ def get_students():
         return jsonify(students), 200
 
     except Exception as e:
+
+        print("GET STUDENTS ERROR:", str(e))
 
         return jsonify({
             "success": False,
@@ -96,6 +106,8 @@ def get_student(reg_no):
 
     except Exception as e:
 
+        print("GET STUDENT ERROR:", str(e))
+
         return jsonify({
             "success": False,
             "error": str(e)
@@ -112,6 +124,15 @@ def create_student():
 
         data = request.get_json()
 
+        print("RECEIVED DATA:", data)
+
+        if not data:
+
+            return jsonify({
+                "success": False,
+                "message": "No JSON data received"
+            }), 400
+
         required_fields = [
             "reg_no",
             "roll_no",
@@ -122,7 +143,7 @@ def create_student():
 
         for field in required_fields:
 
-            if field not in data:
+            if field not in data or str(data[field]).strip() == "":
 
                 return jsonify({
                     "success": False,
@@ -130,12 +151,14 @@ def create_student():
                 }), 400
 
         result = add_student(
-            data["reg_no"],
-            data["roll_no"],
-            data["name"],
+            str(data["reg_no"]),
+            str(data["roll_no"]),
+            str(data["name"]),
             int(data["age"]),
-            data["branch"]
+            str(data["branch"])
         )
+
+        print("ADD RESULT:", result)
 
         if "error" in result:
 
@@ -150,6 +173,8 @@ def create_student():
         }), 201
 
     except Exception as e:
+
+        print("ADD STUDENT ERROR:", str(e))
 
         return jsonify({
             "success": False,
@@ -167,12 +192,16 @@ def update_student_api(reg_no):
 
         data = request.get_json()
 
+        print("UPDATE DATA:", data)
+
         result = update_student(
             reg_no,
-            data["name"],
+            str(data["name"]),
             int(data["age"]),
-            data["branch"]
+            str(data["branch"])
         )
+
+        print("UPDATE RESULT:", result)
 
         if "error" in result:
 
@@ -187,6 +216,8 @@ def update_student_api(reg_no):
         }), 200
 
     except Exception as e:
+
+        print("UPDATE ERROR:", str(e))
 
         return jsonify({
             "success": False,
@@ -204,6 +235,8 @@ def delete_student_api(reg_no):
 
         result = delete_student(reg_no)
 
+        print("DELETE RESULT:", result)
+
         if "error" in result:
 
             return jsonify({
@@ -217,6 +250,8 @@ def delete_student_api(reg_no):
         }), 200
 
     except Exception as e:
+
+        print("DELETE ERROR:", str(e))
 
         return jsonify({
             "success": False,
