@@ -3,4 +3,38 @@ services:
     name: student-management-backend
     env: python
     buildCommand: pip install -r backend/api/requirements.txt
-    startCommand: gunicorn backend.api.app:app
+    startCommand: gunicorn backend.api.app:app --workers 2 --threads 4 --timeout 60
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: APP_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: "false"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SESSION_TTL_SECONDS
+        value: "28800"
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: COOKIE_SAMESITE
+        value: "None"
+      - key: AI_ASSISTANT_PROVIDER
+        value: "deterministic"
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: student_db
+      - key: RATELIMIT_STORAGE_URI
+        sync: false
+      - key: RATELIMIT_FAIL_CLOSED
+        value: "true"
+      - key: TRUSTED_PROXY_HOPS
+        value: "1"
+      - key: ALLOW_DEFAULT_DEMO_USERS
+        value: "false"
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

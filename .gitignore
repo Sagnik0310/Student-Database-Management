@@ -1,25 +1,34 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
 
-# Logs
-logs/
+# Logs (ignore log files while preserving tracked Python module files in logs/)
+logs/*.log
 *.log
+!logs/__init__.py
+!logs/logger.py
 
-# Environment files (IMPORTANT)
+# Environment files (IMPORTANT — never commit real secrets)
 .env
+.env.*
+!.env.example
+!frontend/.env.example
 config.env
 
 # Node
 node_modules/
 build/
 dist/
+frontend - Copy/
 
-# OS
+# OS & Editor
 .DS_Store
 Thumbs.db
-
-# VS Code
 .vscode/
+.idea/
